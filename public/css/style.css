@@ -175,6 +175,8 @@ header a {
 .nav-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-nav {
@@ -205,7 +207,7 @@ form {
   max-width: 280px;
 }
 
-/*COMBO SECTION*/
+/*SECTION*/
 
 .itens-container {
   display: flex;
@@ -220,4 +222,13 @@ form {
 .sundae-container img,
 .picolé-container img {
   width: 2rem;
+}
+
+/*MEDIA QUERY*/
+
+@media (min-width: 700px) {
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
