@@ -136,12 +136,6 @@ body {
   max-width: 100%;
 }
 
-.container {
-  width: 100%;
-  justify-self: left;
-  max-width: 1024px;
-}
-
 .padding {
   padding-left: 10px;
   padding-right: 10px;
@@ -152,7 +146,15 @@ section h2 {
 }
 
 section h4 {
+  font-weight: bold;
   margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.border {
+  border: solid 1px #000;
+  border-radius: 5px;
+  height: 100px;
   margin-bottom: 2px;
 }
 
@@ -160,6 +162,7 @@ section h4 {
 
 header {
   background-color: #ddd;
+  width: 100%;
 }
 
 header a {
@@ -216,19 +219,36 @@ form {
   margin-bottom: 2px;
 }
 
-.combos-container img,
-.sorvete-container img,
-.milk-shake-container img,
-.sundae-container img,
-.picolé-container img {
+.produto-container,
+.container {
+  width: 100%;
+  justify-self: left;
+  max-width: 1024px;
+}
+
+.produto-container img {
   width: 2rem;
+  height: 3rem;
 }
 
 /*MEDIA QUERY*/
 
-@media (min-width: 700px) {
+@media (min-width: 762px) {
   .nav-container {
     flex-direction: row;
     justify-content: space-around;
+  }
+  .border {
+    height: auto;
+  }
+  .produto-container img {
+    width: 3rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .main-container {
+    align-items: flex-start;
+    margin-left: 448px;
   }
 }

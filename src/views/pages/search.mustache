@@ -1,0 +1,26 @@
+{{>partials/header}}
+      <section class="produto-container">
+      {{#filterName}}
+        <h2 class="padding"><strong>Filtrando por: '{{.}}'</strong></h2>
+      {{/filterName}}
+        {{#produtosFilter}}
+          <div class="padding border">
+            <h4>{{produto_name}}</h4>
+            <div class="itens-container padding">
+              <div>{{produto_description}}</div>
+              <div>
+                <img
+                  src="/imgs/{{produto_img_name}}.png"
+                  alt="icone-{{produto_img_name}}"
+                />
+              </div>
+            </div>
+            <div>
+              <strong>R$: {{produto_price}}</strong>
+            </div>
+          </div>
+        {{/produtosFilter}}
+      </section>
+    </div>
+  </body>
+</html>

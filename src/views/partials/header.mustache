@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorveteria</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="container">
+        <div class="header-logo padding">
+          <a href="/"><img src="/imgs/shop.svg" alt="logo-da-sorveteria" /></a>
+          Nome da Sorveteria
+        </div>
+        <div class="header-info padding">
+          <p>
+            <img src="/imgs/truck.svg" alt="icone-caminhão-entrega" />
+            A partir de <strong>R$3,00</strong>
+          </p>
+          <p>
+            <img
+              src="/imgs/clock.svg"
+              alt="icone-relogio-tempo-de-entrega"
+            />
+            Tempo de entrega <strong>20min</strong>
+          </p>
+          <p>
+            <img
+              src="/imgs/cash.svg"
+              alt="icone-dinheiro-preço-entrega"
+            />
+            Pedido mínimo <strong>R$ 12,00</strong>
+          </p>
+        </div>
+        <nav class="nav-container padding">
+          <div class="header-nav">
+            <a href="/">Tudo</a>
+            <a href="/sorvete">Sorvete</a>
+            <a href="/milk-shake">Milk Shake</a>
+            <a href="/sundae">Sundae</a>
+            <a href="/picole">Picolé</a>
+            <a href="/combos">Combos</a>
+          </div>
+          <form class="padding" action="/search" method="get">
+            <input type="text" name="filterName" placeholder="Pesquisa"/>
+            <input class="search" type="submit" value="buscar" />
+          </form>
+        </nav>
+      </header>

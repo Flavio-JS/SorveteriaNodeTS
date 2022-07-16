@@ -1,0 +1,106 @@
+{{>partials/header}}
+      <section class="produto-container">
+      {{#comboTitle}}
+        <h2 class="padding"><strong>{{.}}</strong></h2>
+      {{/comboTitle}}
+        {{#combos}}
+          <div class="padding border">
+            <h4>{{produto_name}}</h4>
+            <div class="itens-container padding">
+              <div>{{produto_description}}</div>
+              <div>
+                <img
+                  src="/imgs/{{produto_img_name}}.png"
+                  alt="icone-{{produto_img_name}}"
+                />
+              </div>
+            </div>
+            <div>
+              <strong>R$: {{produto_price}}</strong>
+            </div>
+          </div>
+        {{/combos}}
+        {{#sorveteTitle}}
+          <h2 class="padding"><strong>{{.}}</strong></h2>
+        {{/sorveteTitle}}
+        {{#sorvetes}}
+          <div class="padding border">
+            <h4>{{produto_name}}</h4>
+            <div class="itens-container padding">
+              <div>{{produto_description}}</div>
+              <div>
+                <img
+                  src="/imgs/{{produto_img_name}}.png"
+                  alt="icone-{{produto_img_name}}"
+                />
+              </div>
+            </div>
+            <div>
+              <strong>R$: {{produto_price}}</strong>
+            </div>
+          </div>
+        {{/sorvetes}}
+        {{#milkShakeTitle}}
+          <h2 class="padding"><strong>{{.}}</strong></h2>
+        {{/milkShakeTitle}}
+        {{#milkShakes}}
+          <div class="padding border">
+            <h4>{{produto_name}}</h4>
+            <div class="itens-container padding">
+              <div>{{produto_description}}</div>
+              <div>
+                <img
+                  src="/imgs/{{produto_img_name}}.png"
+                  alt="icone-{{produto_img_name}}"
+                />
+              </div>
+            </div>
+            <div>
+              <strong>R$: {{produto_price}}</strong>
+            </div>
+          </div>
+        {{/milkShakes}}
+        {{#sundaesTitle}}
+          <h2 class="padding"><strong>{{.}}</strong></h2>
+        {{/sundaesTitle}}
+        {{#sundaes}}
+          <div class="padding border">
+            <h4>{{produto_name}}</h4>
+            <div class="itens-container padding">
+              <div>{{produto_description}}</div>
+              <div>
+                <img
+                  src="/imgs/{{produto_img_name}}.png"
+                  alt="icone-{{produto_img_name}}"
+                />
+              </div>
+            </div>
+            <div>
+              <strong>R$: {{produto_price}}</strong>
+            </div>
+          </div>
+        {{/sundaes}}
+        {{#picoleTitle}}
+          <h2 class="padding"><strong>{{.}}</strong></h2>
+        {{/picoleTitle}}
+        {{#picoles}}
+          <div class="padding border">
+            <h4>{{produto_name}}</h4>
+            <div class="itens-container padding">
+              <div>{{produto_description}}</div>
+              <div>
+                <img
+                  src="/imgs/{{produto_img_name}}.png"
+                  alt="icone-{{produto_img_name}}"
+                />
+              </div>
+            </div>
+            <div>
+              <strong>R$: {{produto_price}}</strong>
+            </div>
+          </div>
+        {{/picoles}}
+      </section>
+    </div>
+  </body>
+</html>
